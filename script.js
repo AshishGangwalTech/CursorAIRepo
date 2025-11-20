@@ -109,45 +109,57 @@ const closeModal = document.querySelector('.close-modal');
 // Project details (you can update these with your actual project details)
 const projectDetails = {
     1: {
-        title: 'Project Name 1',
+        title: 'Smart Expense Intelligence',
         description: `
-            <p>Detailed description of your first featured project. This is where you can provide:</p>
-            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                <li>Project objectives and goals</li>
-                <li>Technologies and tools used</li>
-                <li>Key features and functionalities</li>
-                <li>Challenges faced and solutions</li>
-                <li>Results and impact</li>
+            <p>Multi-tenant FinOps platform that ingests card feeds, scans receipts with Azure Cognitive Services, and highlights risky spend in real time.</p>
+            <div class="modal-subtitle">Key Contributions</div>
+            <ul class="modal-list">
+                <li>Architected event-driven pipeline (Kafka + Node.js) processing 2M+ transactions/day with <strong>99.97% accuracy</strong>.</li>
+                <li>Built React dashboard with drill-down analytics, anomaly heatmaps, and executive-ready KPIs.</li>
+                <li>Integrated Azure Form Recognizer to auto-tag receipts in 0.7s and reduce manual finance effort by 68%.</li>
             </ul>
-            <p style="margin-top: 1rem;">You can also add links to live demos or GitHub repositories here.</p>
+            <div class="modal-subtitle">My Responsibilities</div>
+            <ul class="modal-list">
+                <li>Led end-to-end solution design, sprint planning, and code reviews for a 5-engineer squad.</li>
+                <li>Owned CI/CD (GitHub Actions + Azure DevOps) and blue/green deployments.</li>
+                <li>Partnered with CFO stakeholders to translate compliance requirements into trackable product metrics.</li>
+            </ul>
         `
     },
     2: {
-        title: 'Project Name 2',
+        title: 'AI Resume Matcher',
         description: `
-            <p>Detailed description of your second featured project. Include information about:</p>
-            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                <li>What problem it solves</li>
-                <li>Your role and contributions</li>
-                <li>Technical implementation details</li>
-                <li>Performance metrics or achievements</li>
-                <li>Lessons learned</li>
+            <p>Talent intelligence service that compares candidate profiles against job descriptions using semantic embeddings and recruiter feedback loops.</p>
+            <div class="modal-subtitle">Key Highlights</div>
+            <ul class="modal-list">
+                <li>Designed transformer-based similarity model that achieved <strong>92.4% precision</strong> on historical hiring data.</li>
+                <li>Exposed REST + GraphQL APIs consumed by ATS partners for instant shortlist recommendations.</li>
+                <li>Implemented explainability layer to show skill gaps, cultural fit signals, and salary benchmarks.</li>
             </ul>
-            <p style="margin-top: 1rem;">Add any relevant screenshots, demos, or code samples.</p>
+            <div class="modal-subtitle">My Responsibilities</div>
+            <ul class="modal-list">
+                <li>Owned model training pipeline (PyTorch + FastAPI) and scheduled retraining with MLflow.</li>
+                <li>Led integrations with ElasticSearch, enabling typo-tolerant search and facet filtering.</li>
+                <li>Drove stakeholder demos, adoption workshops, and documentation for HR tech clients.</li>
+            </ul>
         `
     },
     3: {
-        title: 'Project Name 3',
+        title: 'Real-time Fleet Command',
         description: `
-            <p>Detailed description of your third featured project. Provide insights into:</p>
-            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                <li>Project scope and timeline</li>
-                <li>Architecture and design decisions</li>
-                <li>Collaboration and teamwork</li>
-                <li>Innovation and creativity</li>
-                <li>Future improvements</li>
+            <p>Operational intelligence cockpit ingesting 5K+ vehicle IoT streams, forecasting failures, and dispatching service teams automatically.</p>
+            <div class="modal-subtitle">Key Outcomes</div>
+            <ul class="modal-list">
+                <li>Created WebSocket-driven map with live routes, driver behavior scoring, and SLA breach alerts.</li>
+                <li>Built predictive maintenance model that reduced on-road breakdowns by <strong>37%</strong>.</li>
+                <li>Automated compliance reports (fuel, emissions, load) for multi-country operations.</li>
             </ul>
-            <p style="margin-top: 1rem;">Include any awards, recognition, or notable outcomes.</p>
+            <div class="modal-subtitle">My Responsibilities</div>
+            <ul class="modal-list">
+                <li>Implemented TypeScript micro-frontends and GraphQL gateway stitching 12 services.</li>
+                <li>Configured AWS IoT Core, Kinesis, and Lambda analytics pipeline with dynamic scaling.</li>
+                <li>Championed observability (OpenTelemetry, Datadog) and 24/7 on-call runbooks.</li>
+            </ul>
         `
     }
 };
