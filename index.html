@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Gangwal - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Ashish Gangwal</div>
+            <ul class="nav-menu">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">☰</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <img src="Portfolio_image.jpg" alt="Ashish Gangwal" class="profile-image">
+                </div>
+                <div class="punchline">
+                    <p class="punchline-text">Transforming Vision into Reality Through Code</p>
+                </div>
+                <h1 class="hero-title">Ashish Gangwal</h1>
+                <p class="hero-subtitle">Software Developer & Programmer</p>
+                <p class="hero-description">Crafting cutting-edge solutions that drive innovation and deliver exceptional user experiences</p>
+                <button class="cta-button" id="contactBtn">
+                    <i class="fas fa-paper-plane"></i> Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-user-circle section-icon"></i>
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a dedicated software developer with a passion for creating efficient and scalable solutions. 
+                        With expertise in modern web technologies and programming languages, I strive to deliver high-quality 
+                        applications that solve real-world problems.
+                    </p>
+                    <p>
+                        My journey in software development has been driven by curiosity and a commitment to continuous learning. 
+                        I enjoy tackling complex challenges and turning ideas into reality through code.
+                    </p>
+                    <button class="toggle-button" id="toggleAbout">Read More</button>
+                    <div class="hidden-content" id="moreAbout">
+                        <p>
+                            <!-- Add more details from your resume here -->
+                            Additional information about your background, education, and experience will go here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-laptop-code section-icon"></i>
+                Skills & Technologies
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming Languages</h3>
+                    <p>JavaScript, Python, Java, C++</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Web Technologies</h3>
+                    <p>HTML5, CSS3, React, Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Frameworks</h3>
+                    <p>Git, Docker, AWS, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Other Skills</h3>
+                    <p>Problem Solving, Team Collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-project-diagram section-icon"></i>
+                Featured Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <div class="project-placeholder">Project 1</div>
+                    </div>
+                    <div class="project-content">
+                        <h3><i class="fas fa-star project-title-icon"></i> Project Name 1</h3>
+                        <p class="project-description">
+                            Brief description of your first featured project. Include key technologies used and 
+                            the problem it solves.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                        <button class="project-button" data-project="1">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <div class="project-placeholder">Project 2</div>
+                    </div>
+                    <div class="project-content">
+                        <h3><i class="fas fa-star project-title-icon"></i> Project Name 2</h3>
+                        <p class="project-description">
+                            Brief description of your second featured project. Highlight the main features 
+                            and achievements.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                        <button class="project-button" data-project="2">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-folder-open project-icon"></i>
+                        <div class="project-placeholder">Project 3</div>
+                    </div>
+                    <div class="project-content">
+                        <h3><i class="fas fa-star project-title-icon"></i> Project Name 3</h3>
+                        <p class="project-description">
+                            Brief description of your third featured project. Explain the impact and 
+                            what you learned from it.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Technology 1</span>
+                            <span class="tech-tag">Technology 2</span>
+                        </div>
+                        <button class="project-button" data-project="3">
+                            <i class="fas fa-eye"></i> View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-paper-plane section-icon"></i>
+                Get In Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <strong>Email:</strong> your.email@example.com
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin contact-icon"></i>
+                        <strong>LinkedIn:</strong> linkedin.com/in/ashishgangwal
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github contact-icon"></i>
+                        <strong>GitHub:</strong> github.com/ashishgangwal
+                    </div>
+                </div>
+                <button class="cta-button" id="emailBtn">
+                    <i class="fas fa-envelope"></i> Send Email
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ashish Gangwal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Project Details</h2>
+            <div id="modalBody">
+                <p>Detailed information about the project will appear here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
