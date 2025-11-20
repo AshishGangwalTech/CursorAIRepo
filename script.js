@@ -232,3 +232,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Profile visit counter (per browser using localStorage)
+document.addEventListener('DOMContentLoaded', () => {
+    const viewsElement = document.getElementById('profileViewsCount');
+    if (!viewsElement) return;
+
+    const STORAGE_KEY = 'ashish_profile_views';
+    let currentCount = parseInt(localStorage.getItem(STORAGE_KEY) || '0', 10);
+
+    // Increment count for this visit
+    currentCount += 1;
+    localStorage.setItem(STORAGE_KEY, String(currentCount));
+
+    // Format number with commas for readability
+    viewsElement.textContent = currentCount.toLocaleString();
+});
+
